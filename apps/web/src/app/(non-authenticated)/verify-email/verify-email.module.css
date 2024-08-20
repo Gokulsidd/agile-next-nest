@@ -1,0 +1,75 @@
+/* Center the content with flexbox */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Style for the loading text */
+.loading {
+  font-size: 24px;
+  color: #666;
+}
+
+/* Base style for status container */
+.statusContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: white;
+  color: black;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+  margin: 2rem;
+}
+
+/* Keyframes for the animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Icon styling */
+.icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Heading styling */
+.statusMessage {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Redirect message styling */
+.redirectMessage {
+  font-size: 18px;
+  margin-top: 10px;
+  color: black;
+}
+
+/* Logo styling */
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
